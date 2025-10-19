@@ -5,21 +5,21 @@
 class Hitch < Formula
   desc "Git workflow manager for multi-environment development teams"
   homepage "https://github.com/DoomedRamen/hitch"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.4/hitch_0.1.4_darwin_amd64.tar.gz"
-      sha256 "6457bf8a5092ca0c2f77f14f6c757accf5dcefdd5733cfbb8d9ac2820634115f"
+      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.5/hitch_0.1.5_darwin_amd64.tar.gz"
+      sha256 "47ab8f064a2cb263d741c62a96554727b98f3af882ab460bca177767e0904fbc"
 
       def install
         bin.install "hitch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.4/hitch_0.1.4_darwin_arm64.tar.gz"
-      sha256 "5837736d0ff713293b828da67a7cf3fa23dcdc2377b0454dc9408f6ed8bd0fcd"
+      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.5/hitch_0.1.5_darwin_arm64.tar.gz"
+      sha256 "8e85f19db22a3f33bc2889cc4fd314e575301fea4d2d83a5cfdd7e335c48345e"
 
       def install
         bin.install "hitch"
@@ -29,15 +29,15 @@ class Hitch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.4/hitch_0.1.4_linux_amd64.tar.gz"
-      sha256 "ed5d10f586069b70cdb5ce1c90688373a4314212f4fed28587cc0ab1c6831fbf"
+      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.5/hitch_0.1.5_linux_amd64.tar.gz"
+      sha256 "f8276ce9288bd3ad8d103f65a2b505d7a02b230c75c4460045f6e0966e920763"
       def install
         bin.install "hitch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.4/hitch_0.1.4_linux_arm64.tar.gz"
-      sha256 "40ed92255651488638826b7efc9afc9b177d4426a804915baf376dd85f75d167"
+      url "https://github.com/DoomedRamen/hitch/releases/download/v0.1.5/hitch_0.1.5_linux_arm64.tar.gz"
+      sha256 "c3e18e260be784d5cd17cbb43e6810e2e6e0acc949f7eda64cc049985dba2753"
       def install
         bin.install "hitch"
       end
