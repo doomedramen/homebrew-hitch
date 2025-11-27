@@ -1,25 +1,25 @@
 class Hitch < Formula
   desc "A CLI tool for managing environment-specific git branches and metadata"
   homepage "https://github.com/doomedramen/hitch"
-  version "1.2.10"
+  version "1.2.13"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.2.10/hitch-aarch64-apple-darwin.tar.xz"
-      sha256 "47bdc46dcfa1be64c1d5fa2399d948a5b4de6c1d25f832f480fb610e366af802"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.2.13/hitch-aarch64-apple-darwin.tar.xz"
+      sha256 "c4694112c924e0acc895c80fd310eed80026f814ea300d97353df41b6fddd837"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.2.10/hitch-x86_64-apple-darwin.tar.xz"
-      sha256 "db0192e21c5966ab5c3015bca832a7ee58aef04a4104536371d3e44c4e2716c5"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.2.13/hitch-x86_64-apple-darwin.tar.xz"
+      sha256 "97a1df87c5e6f729129c98fa4eb205bb5fa97ce6d88001634195c994a5da40e2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.2.10/hitch-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d942fc3807c54a76516f845f2bd69b2e47eef0e6965f78c692f5259b47e0ce98"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.2.13/hitch-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b4dae34ff49810af532ad3ce70e6c514c897cd781373f6bb4cfca3f2a5200bff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.2.10/hitch-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b096c2a4c3783ecd216a75987605a88a3b5b5a81c9f583be09fbd61844102a8e"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.2.13/hitch-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "54ae309315967f7c6e358998092b2fc5fe0dbb6ff3d2855a99fd66c7f12c075d"
     end
   end
   license "MIT"
@@ -28,7 +28,6 @@ class Hitch < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
