@@ -10,7 +10,7 @@ cask "hitch-desktop" do
   desc "Git branch management for environment-based deployments"
   homepage "https://github.com/doomedramen/hitch"
 
-  artifact :app, target: "Hitch Desktop.app"
+  app "Hitch Desktop.app"
 
   uninstall quit: "com.doomedramen.hitchdesktop"
 end
