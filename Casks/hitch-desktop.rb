@@ -2,15 +2,15 @@
 # Created on 2026-04-18
 
 cask "hitch-desktop" do
-  version "0.0.5"
-  sha256 "20c4789ff9eb5a07ad33e9daa51439b54a102d3c11f0a090a0b7df11c3d213c8"
+  version "v0.0.7"
+  sha256 "0c16d231ad0fe0b65ff729820e6f4cfbf5a245e1b18e0c456590afe65de73cdb"
 
-  url "https://github.com/doomedramen/hitch/releases/download/desktop-v0.0.5/Hitch.Desktop_0.0.5_aarch64.dmg"
+  url "https://github.com/doomedramen/hitch/releases/download/desktop-v0.0.7/Hitch%20Desktop_0.0.6_aarch64.dmg"
   name "Hitch Desktop"
   desc "Git branch management for environment-based deployments"
   homepage "https://github.com/doomedramen/hitch"
 
-  app "Hitch Desktop.app"
+  artifact :app, target: "Hitch Desktop.app"
 
   uninstall quit: "com.doomedramen.hitchdesktop"
 end
