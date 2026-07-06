@@ -2,10 +2,10 @@
 # Created on 2026-07-06
 
 cask "hitch-desktop" do
-  version "v0.0.11"
-  sha256 "8366e31f7b68ce82871cd29dd22a186054fb0cd69653fdabb9549e8d5e73dd58"
+  version "v0.0.12"
+  sha256 "98769165a105dc7405af22150b2485b9e015975f20e42000f5c4e4e7a840175e"
 
-  url "https://github.com/doomedramen/hitch/releases/download/desktop-v0.0.11/Hitch-Desktop_0.0.11_aarch64.dmg"
+  url "https://github.com/doomedramen/hitch/releases/download/desktop-v0.0.12/Hitch-Desktop_0.0.12_aarch64.dmg"
   name "Hitch Desktop"
   desc "Git branch management for environment-based deployments"
   homepage "https://github.com/doomedramen/hitch"
