@@ -1,25 +1,25 @@
 class Hitch < Formula
   desc "A CLI tool for managing environment-specific git branches and metadata"
   homepage "https://github.com/doomedramen/hitch"
-  version "1.3.4"
+  version "1.3.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.4/hitch-aarch64-apple-darwin.tar.xz"
-      sha256 "2a706bacd08628754fee6c5a4bef2243dda43152c66873cbcb29f887e8ec62aa"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.3.5/hitch-aarch64-apple-darwin.tar.xz"
+      sha256 "ad48226c778fdeb4415009cb28987e131811e48f3e5e7c9727accccd7550cb14"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.4/hitch-x86_64-apple-darwin.tar.xz"
-      sha256 "7af247416908ee24b51998d8e368b9048d93a0362d8e4c5d14a78204dec73bb5"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.3.5/hitch-x86_64-apple-darwin.tar.xz"
+      sha256 "cd4d42c636ce337e2afd5ef8dd6ea3d9565e4373c801da9a250d6455f5fee618"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.4/hitch-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0c959b81fbab76c473da1e23a222473fbfd1a3ea34f9ca63672c43f6af03a19d"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.3.5/hitch-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "baf872e2b1d5655f5d73bd58afb5118926b63f51428589b5d0720f84ce6a6b2d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.4/hitch-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a2cb7bee2239a7b8868aa6df73045d66ae15a4c0e8c17883603a21ac05eee829"
+      url "https://github.com/doomedramen/hitch/releases/download/v1.3.5/hitch-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2c03b5825ededcadeda7cc06f5dbec96aca191f5c309ed2867159d428e056ce8"
     end
   end
   license "MIT"
