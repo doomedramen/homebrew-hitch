@@ -1,25 +1,25 @@
 class Hitch < Formula
   desc "A CLI tool for managing environment-specific git branches and metadata"
   homepage "https://github.com/doomedramen/hitch"
-  version "1.3.8"
+  version "2.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.8/hitch-aarch64-apple-darwin.tar.xz"
-      sha256 "ae77316a4649e722a8542c4e946f472a2835d11b86ea4e6330be7d1bf25de77b"
+      url "https://github.com/doomedramen/hitch/releases/download/v2.0.0/hitch-aarch64-apple-darwin.tar.xz"
+      sha256 "f9c34211b32f360fbc7a12c794457e70dd56300ba642fd1a99570b03393d4836"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.8/hitch-x86_64-apple-darwin.tar.xz"
-      sha256 "dee8afa2fc004920899d61b706e10b7e76a7a98a261c270ef75ee0e190ce1a7c"
+      url "https://github.com/doomedramen/hitch/releases/download/v2.0.0/hitch-x86_64-apple-darwin.tar.xz"
+      sha256 "513a7b81206a071faf22bf94b773179b65bd351f8e08c4310141c49600fc4a6d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.8/hitch-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "84cd4485eb60e0b2064b654df134b7e13aa0059de4da4d6f7d92f372284cff6b"
+      url "https://github.com/doomedramen/hitch/releases/download/v2.0.0/hitch-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2bb43e28d73d3d5ac29d03f35bb2a95da4094bdf47982f9aa51590b579c81dd8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/doomedramen/hitch/releases/download/v1.3.8/hitch-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6f49fb8d3777df85bd779e776e3f630dca196b65be832e1534bd2cd3531b6776"
+      url "https://github.com/doomedramen/hitch/releases/download/v2.0.0/hitch-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d8d42e9411e8dd8e27dd2796f2ac79f18ac50e0794bd4afc54c58e4e0a8ef8fa"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Hitch < Formula
   end
 
   def install
-    bin.install "hitch" if OS.mac? && Hardware::CPU.arm?
-    bin.install "hitch" if OS.mac? && Hardware::CPU.intel?
-    bin.install "hitch" if OS.linux? && Hardware::CPU.arm?
-    bin.install "hitch" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "hitch"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "hitch"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "hitch"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "hitch"
+    end
 
     install_binary_aliases!
 
